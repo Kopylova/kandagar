@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd 
+						http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd 
+						http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.1.xsd
+						http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<mvc:annotation-driven />
+	<context:component-scan base-package="com.kandagar.rls" />
+	<task:annotation-driven />
+	<aop:aspectj-autoproxy />
+	
+	<mvc:interceptors>
+		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"
+			p:paramName="lang" />
+	</mvc:interceptors>
+
+	<bean
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
+		id="messageSource" p:basenames="/resources/message,/resources/application"
+		p:fallbackToSystemLocale="false" />
+
+	<bean class="org.springframework.web.servlet.i18n.CookieLocaleResolver"
+		id="localeResolver" p:cookieName="locale" p:defaultLocale="ru" />
+
+
+	<import resource="data-context.xml" />
+	<import resource="security-context.xml"/>
+	<import resource="spring-job.xml"/>
+	
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/views/layouts">
+	<decorator name="client" page="clientLayout.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	<decorator name="admin" page="adminLayout.jsp">
+		<pattern>/login</pattern>
+	</decorator>
+	<decorator name="admin" page="adminLayout.jsp">
+		<pattern>/loginfailed</pattern>
+	</decorator>
+	<decorator name="admin" page="adminLayout.jsp">
+		<pattern>/admin/*</pattern>
+	</decorator>
+</decorators>

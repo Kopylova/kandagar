@@ -1,0 +1,171 @@
+
+.tm-nav {
+	background: #333;
+	padding: 10px 0;
+}
+
+.user-login {
+	font-size: 16px;
+	color: #fff;
+	line-height: 30px;
+}
+
+.change-login {
+	font-style: italic;
+	color: #fff;
+	text-decoration: underline;
+}
+
+.change-login:hover {
+	text-decoration: none;
+	color: #ddd;
+}
+
+.user-icon {
+	font-size: 30px;
+	vertical-align: top;
+	margin-right: 15px;
+}
+
+.form-label {
+	color: #fff;
+}
+
+body {
+	background: #00AFF2;
+}
+
+.panel-box {
+	margin: 10px 0;
+}
+
+.icon-calendar {
+	margin-left: 18px;
+}
+
+.item-foto {
+	margin-bottom: 0;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+.link:hover {
+	text-decoration: none;
+}
+
+.download {
+	color: #000;
+}
+
+.download:hover {
+	color: #666;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.container {
+	margin-top: 55px;
+}
+
+.filter-button {
+	position: relative;
+}
+
+.filter-label {
+	position: absolute;
+	color: #fff;
+	background: #da314b;
+	top: 1px;
+	right: 2px;
+	font-size: 11px;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	line-height: 13px;
+	border-radius: 10px;
+}
+
+.inline-style {
+	display: inline;
+}
+
+.button-container {
+	margin:0 !important;
+	padding:0 26px 0 0  !important;
+	width: 200px;
+	float: right;
+}
+
+.button-container> button {
+	padding-left:10px !important;
+	margin-right: 10px !important;
+}
+
+.italic-text {
+	color: #000;
+}
+
+.date-info {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.info-item {
+	position: relative;
+}
+
+.button-show-link {
+	background: #8BCC00;
+	border-color: #999;
+	color: #fff;
+	text-shadow: 0 1px 0 #777;
+}
+
+.sort-column {
+	margin-left: 98px;
+}
+
+.bar-link {
+	margin-left: 3px;
+}
+
+.form-column .uk-form-row.uk-form{
+	float: left;
+	width: 366px;
+	margin-top: 0
+}
+
+.button-container >  button {
+	float: right;
+}
+
+.tag-continer {
+	float: left;
+	margin-left: -38px !important;
+}
+
+.uk-form-controls .uk-form-small.uk-width-9-10 {
+	width: 330px;
+}
+
+.uk-form-row.uk-form .uk-form-label {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.uk-icon-filter.filter-button.filter_active {
+	color: #00AFF2;
+}
+
+#filter {
+	display: none;
+}
